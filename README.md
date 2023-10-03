@@ -11,7 +11,7 @@ static string pointPrefabPath = "Assets/First-Person Parkour System/Assets/Prefa
 
 ![](https://raw.githubusercontent.com/betsukelig/Mesh-Edge-Detector/main/edgeDetectDemo1.gif)
 
-![](https://github.com/betsukelig/Mesh-Edge-Detector/edgeDetectDemo2.gif)
+![](https://raw.githubusercontent.com/betsukelig/Mesh-Edge-Detector/main/edgeDetectDemo2.gif)
 
 If you wish to do something else with the edges...
 
@@ -25,11 +25,11 @@ EdgesInMesh Use:
 returns Edge array:
 
  	public struct Edge
-    		{
-        		public Vector3 Start;
-        		public Vector3 End;
-        		public Vector3 Tri1Normal;
-        		public Vector3 Tri2Normal;
-        		public Vector3 Tri1Pos;
-        		public Vector3 Tri2Pos;
-    		}
+    	{
+        	public Vector3 Start;
+        	public Vector3 End;
+        	public Vector3 Tri1Normal;
+        	public Vector3 Tri2Normal;
+        	public Vector3 Tri1Pos;
+        	public Vector3 Tri2Pos;
+    	}

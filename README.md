@@ -25,7 +25,7 @@ I added this in case your world doesn't rotate and you only need top down edge p
 
 ![](https://raw.githubusercontent.com/betsukelig/Mesh-Edge-Detector/main/edgeDetectDemo3.gif)
 
--Editor menu GioG>FPPS>RemoveEdges simply removes all objects named "Point" 
+-Editor menu GioG>FPPS>RemoveEdges simply removes all child objects named "Point" 
 
 
 If you wish to do something else with the edges...

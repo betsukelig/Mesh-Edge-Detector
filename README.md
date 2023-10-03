@@ -6,7 +6,7 @@ AddEdgesToMesh Use:
 If your First-Person Parkour System is located in a different path, change this variable in AddEdgesToMesh
 
 static string pointPrefabPath = "Assets/First-Person Parkour System/Assets/Prefabs/Parkour Objects/Point.prefab";
-
+-First Select Object with MeshRenderer
 -Editor menu GioG>FPPS>AddEdges   	
 
 ![](https://raw.githubusercontent.com/betsukelig/Mesh-Edge-Detector/main/edgeDetectDemo1.gif)
@@ -14,6 +14,8 @@ static string pointPrefabPath = "Assets/First-Person Parkour System/Assets/Prefa
 -Editor menu GioG>FPPS>AddBeveledEdges  
 
 ![](https://raw.githubusercontent.com/betsukelig/Mesh-Edge-Detector/main/edgeDetectDemo2.gif)
+
+A mesh collider will be added to your Object as well 
 
 -Editor menu GioG>FPPS>RemoveEdges simply removes all objects named "Point" 
 

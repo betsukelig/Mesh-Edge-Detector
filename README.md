@@ -1,5 +1,5 @@
 # Mesh-Edge-Detector
-Mesh Edge Detector for First-Person Parkour System Asset of Unity 3D
+Mesh Edge Detector for [First-Person Parkour System](https://assetstore.unity.com/packages/templates/packs/first-person-parkour-system-v2-0-for-playmaker-168546) Asset of Unity 3D
 
 AddEdgesToMesh Use:
 

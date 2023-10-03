@@ -3,7 +3,7 @@ Mesh Edge Detector for First-Person Parkour System Asset of Unity 3D
 
 AddEdgesToMesh Use:
 
--If your First-Person Parkour System is located in a different path, change this variable in AddEdgesToMesh
+If your First-Person Parkour System is located in a different path, change this variable in AddEdgesToMesh
 
 static string pointPrefabPath = "Assets/First-Person Parkour System/Assets/Prefabs/Parkour Objects/Point.prefab";
 
@@ -15,7 +15,7 @@ static string pointPrefabPath = "Assets/First-Person Parkour System/Assets/Prefa
 
 ![](https://raw.githubusercontent.com/betsukelig/Mesh-Edge-Detector/main/edgeDetectDemo2.gif)
 
-Editor menu GioG>FPPS>RemoveEdges simply removes all objects named "Point" 
+-Editor menu GioG>FPPS>RemoveEdges simply removes all objects named "Point" 
 
 If you wish to do something else with the edges...
 
@@ -26,7 +26,7 @@ EdgesInMesh Use:
 	EdgesInMesh.Edge[] edges = edgesInMesh.GetEdges(edgeMaxAngle);
 	EdgesInMesh.Edge[] beveledEdges = edgesInMesh.GetBeveledEdges(edgeMaxAngle, float bevelradius =0.1f);
         
-returns Edge array:
+will return Edge array:
 
  	public struct Edge
     	{

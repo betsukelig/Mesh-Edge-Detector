@@ -11,13 +11,19 @@ static string pointPrefabPath = "Assets/First-Person Parkour System/Assets/Prefa
 
 -Editor menu GioG>FPPS>AddEdges   	
 
+A mesh collider will be added to your Object as well 
+
 ![](https://raw.githubusercontent.com/betsukelig/Mesh-Edge-Detector/main/edgeDetectDemo1.gif)
 
 -Editor menu GioG>FPPS>AddBeveledEdges  
 
 ![](https://raw.githubusercontent.com/betsukelig/Mesh-Edge-Detector/main/edgeDetectDemo2.gif)
 
-A mesh collider will be added to your Object as well 
+-Editor menu GioG>FPPS>TopDownEdgesOnly  
+
+I added this in case your world doesn't rotate and you only need top down edge points. 
+
+![](https://raw.githubusercontent.com/betsukelig/Mesh-Edge-Detector/main/edgeDetectDemo3.gif)
 
 -Editor menu GioG>FPPS>RemoveEdges simply removes all objects named "Point" 
 

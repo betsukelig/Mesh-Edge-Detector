@@ -39,6 +39,17 @@ public class AddEdgesToMeshWindow : EditorWindow
         foreach (Transform pointtransforms in edgeManager.GetEdges())
             pointtransforms.gameObject.SetActive(false);
     }*/
+    [MenuItem("GioG/FPPS/TopDownEdgesOnly")]
+    public static void IsolateTopDownEdges()
+    {
+        GameObject[] selectedObjects = Selection.gameObjects;
+
+        foreach (GameObject selectedObject in selectedObjects)
+        {
+            AddEdgesToMesh.TopDownEdgesOnly(selectedObject.transform);
+
+        }
+    }
     [MenuItem("GioG/FPPS/RemoveEdges")]
     public static void RemoveEdges()
     {
@@ -152,6 +163,22 @@ public class AddEdgesToMesh
         }
         if (OnRemovedEdges != null)
             OnRemovedEdges(transform);
+    }
+    public static void TopDownEdgesOnly(Transform transform)
+    {//remove non horizontal points. isolate edges that are facing top down
+        for (int t = transform.childCount - 1; t > -1; t--)
+        {
+            Transform child = transform.GetChild(t);
+            string goname = child.gameObject.name;
+            if (goname == "Point")
+            {
+                if (Vector3.Dot(child.up, Vector3.up) < 0.5f)
+                {
+                    GameObject.DestroyImmediate(child.gameObject);
+                }
+               
+            }
+        }
     }
     static bool IsClockwise(Vector3 v1, Vector3 v2, Vector3 pivot, Vector3 dir, bool clockwise)
     {

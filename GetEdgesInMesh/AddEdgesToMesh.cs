@@ -69,6 +69,19 @@ public class AddEdgesToMesh
     public static AddedEdgesToMesh OnFinishAddingEdges;
     public delegate void RemovedEdgesToMesh(Transform objectTransform);
     public static RemovedEdgesToMesh OnRemovedEdges;
+    //recompilation nullifies these delegates, so assign your functions to them every reload
+    //heres an example:
+    /*
+#if UNITY_EDITOR
+    [UnityEditor.Callbacks.DidReloadScripts]
+    private static void OnScriptsReloaded()
+    {
+        AddEdgesToMesh.OnFinishAddingEdges = yourfunction;
+        AddEdgesToMesh.OnRemovedEdges = yourfunction;
+    }
+#endif*/
+
+    
     static string pointPrefabPath = "Assets/First-Person Parkour System/Assets/Prefabs/Parkour Objects/Point.prefab";
     public static void AddEdgesAddCollider(GameObject selectedObject, float angle = 100f, bool beveled = false)
     {

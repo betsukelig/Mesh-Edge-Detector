@@ -155,8 +155,8 @@ public class AddEdgesToMesh
 
                 edgeTransforms.Add(pointSide1Transform);
                 edgeTransforms.Add(pointSide2Transform);
-                pointSide1Transform.gameObject.AddComponent<ClimbPoint>();
-                pointSide2Transform.gameObject.AddComponent<ClimbPoint>();
+                //pointSide1Transform.gameObject.AddComponent<ClimbPoint>();
+                //pointSide2Transform.gameObject.AddComponent<ClimbPoint>();
             }
         }
 
